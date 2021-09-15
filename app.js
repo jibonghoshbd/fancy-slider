@@ -10,7 +10,7 @@ const search = document.getElementById('search');
 
 search.addEventListener("keypress", function (event) {
   // event.preventDefault();
-  if (event.keyCode == 13)
+  if (event.key == 'Enter')
     searchBtn.click();
 });
 
