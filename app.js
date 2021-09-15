@@ -1,9 +1,20 @@
 const imagesArea = document.querySelector('.images');
 const gallery = document.querySelector('.gallery');
 const galleryHeader = document.querySelector('.gallery-header');
-const searchBtn = document.getElementById('search-btn');
+let searchBtn = document.getElementById('search-btn');
 const sliderBtn = document.getElementById('create-slider');
 const sliderContainer = document.getElementById('sliders');
+
+// click enterbtn keyboard 
+const search = document.getElementById('search');
+
+search.addEventListener("keypress", function (event) {
+  // event.preventDefault();
+  if (event.keyCode == 13)
+    searchBtn.click();
+});
+
+
 // selected image 
 let sliders = [];
 
